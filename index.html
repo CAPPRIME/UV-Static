@@ -2,21 +2,215 @@
 <html>
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Bare bones proxy</title>
-      <!--<link rel="stylesheet" href="../../assets/styles/css/global.min.css">-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <link rel="stylesheet" href="/active/index.css">
       <link rel="icon" type="image/x-icon" href="/active/logo.png">
-      
       <link rel="shortcut icon" type="image/jpg" href="/active/logo.png"/>
-      
       <link rel="stylesheet" href="../assets/font-awesome/css/all.css">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
    </head>
    <body>
-      
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="https://assets.onecompiler.app/435gaenwx/439ny5w32/Canvas_logo_single_mark-removebg-preview__1_-removebg-preview.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://assets.onecompiler.app/435gaenwx/435vd4627/1asyzovvrn8a1%20(1).gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .topnav {
+            display: flex; /* Enable flexbox */
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center items vertically */
+            background-color: #333;
+            position: fixed; 
+            top: 0;        
+            width: 100%;   
+            z-index: 1000; 
+        }
+
+        .left-nav {
+            display: flex; /* Enable flexbox for left section */
+            flex-grow: 1; /* Allow this section to grow */
+        }
+
+        .right-nav {
+            display: flex; /* Enable flexbox for right section */
+        }
+
+        .topnav a, .topnav button {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 26px;
+            text-decoration: none;
+            font-size: 28px;
+            border: none; /* Remove border from buttons */
+            cursor: pointer;
+            background: none; /* Remove button background */
+        }
+
+        .topnav a:hover, .topnav button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .topnav button {
+            margin-right: 0; /* Remove margin for buttons */
+            display: flex; /* Enable flexbox for buttons */
+            align-items: center; /* Center text vertically */
+        }
+
+        h1, h2, p {
+            color: white;
+            text-align: center;
+        }
+
+        img {
+            display: block; 
+            margin: 20px auto; /* Center the image */
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = prompt("Password:");
+            if (password === "Adam and Hunter") {
+                window.location.href = "dev69adam.html";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+
+        function openGame() {
+            var url = prompt("Please enter the URL you want to open in the iframe (not all sites work):", "https://example.com");
+            if (url) {
+                var win = window.open('', '_blank', 'toolbar=no, menubar=no, location=no, scrollbars=no, status=no');
+                var iframe = win.document.createElement('iframe');
+                iframe.style.position = "absolute";
+                iframe.style.top = "0px";
+                iframe.style.left = "0px";
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.border = "none";
+                iframe.frameBorder = "0";
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            } 
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+        <div class="left-nav">
+            <a class="active" href="./index.html">Home</a>
+            <a href="./apps.html">Apps</a>
+            <a href="./game.html">Games</a>
+            <a href="./proxys.html">Proxys</a>
+        </div>
+        <div class="right-nav">
+            <a href="./chat.html">Chat</a>
+            <button onclick="openGame();">Cloak</button>
+            <a href="./Kill.html">GoguardianKiller</a>
+            <button onclick="checkPassword();">Dev</button>
+        </div>
+    </div>
+
+<br><br><br><br><br>
+        <h1 style="font-size: 45px;">CAP_PR1ME</h1>
+        
+    <style>
+        .moving-text-container {  
+            text-align: center;
+            margin: 20px 0;      
+        }
+
+        .moving-text {
+            color: white; 
+            display: inline-block; 
+            animation: moveAndTilt 2s infinite alternate ease-in-out; 
+            font-size: 40px; 
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+        }
+
+        @keyframes moveAndTilt {
+            0% {
+                transform: translateX(-10px) rotate(-10deg); 
+            }
+            100% {
+                transform: translateX(10px) rotate(10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="moving-text-container">  
+        <div class="moving-text" id="random-text">Loading...</div>
+    </div>
+
+    <script>
+        const phrases = [
+            "Hewwo!",
+            "What Game Do You Want To Play",
+            "Welcome to the site!",
+            "Ads would give me more than $2500 dollars a year",
+            "Have a great day!",
+            "1.2k different kids go to this site every day",
+            "I Kind of Suck at Codeing",
+            "updated weekly!!!",
+            "ʕ•́ᴥ•̀ʔっ",
+            "New and Improved!",
+            "Hi Ben an ken",
+            "Ill fix the images later",
+            "I better not get iss for this",
+            "my homework ate my dog",
+            "I'm not the only one with 48178 hours on Brawl Stars",
+            "ヽ༼ ಠ益ಠ ༽ﾉ",
+            "downloading your passwords...",
+            "Since 2025! (Ya, thats like 2 months ago)",
+            "https://youtube.com/watch?v=dQw4w9WgXcQ",
+            "Dont fail your classes"
+        ];
+
+        function setRandomPhrase() {
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+            const randomPhrase = phrases[randomIndex];
+            document.getElementById('random-text').textContent = randomPhrase;
+        }
+
+        
+        window.onload = setRandomPhrase;
+    </script>
+
+</body>
+</html>
+    
+    
+    <h2 style="color:white;font-size:45px;"> Derp </h2>
+  <p style="color:white;font-size:50px;"><p>
+  <p></p>
+  
+  <img src="https://assets.onecompiler.app/435gaenwx/435vd4627/1705450589654-removebg-preview%20(1).png"  height="145">
+  
+</div>
+
+</body>
+</html>
+
       
       <canvas id="canvas"></canvas>
       <div id="header">
