@@ -1,0 +1,46 @@
+.topnav {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    background-color: #333;
+    position: fixed; 
+    top: 0;        
+    width: 100%;   
+    z-index: 1000; 
+}
+
+.left-nav {
+    display: flex; /* Enable flexbox for left section */
+    flex-grow: 1; /* Allow this section to grow */
+}
+
+.right-nav {
+    display: flex; /* Enable flexbox for right section */
+}
+
+.topnav a, .topnav button {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 28px;
+    border: none; /* Remove border from buttons */
+    cursor: pointer;
+    background: none; /* Remove button background */
+}
+
+.topnav a:hover, .topnav button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav button {
+    margin-right: 0; /* Remove margin for buttons */
+    display: flex; /* Enable flexbox for buttons */
+    align-items: center; /* Center text vertically */
+}
