@@ -37,7 +37,7 @@ nav .logo h1 {
 }
 
 nav a {
-  color: var(--text);
+  color: #0284d4;
   text-decoration: none;
   font-size: 18px;
   margin: 10px;
@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:visited {
-  color: var(--text);
+  color: #0284d4;
 }
 
 nav img {
@@ -64,9 +64,9 @@ nav .navitem a {
 }
 
 nav a[selected], nav .navitem a:hover {
-  background-color: var(--background); /* Set to the background color */
+  background-color: #0284d4; /
   text-decoration: none;
-  color: var(--text); /* Adjust text color if needed */
+  color: #0284d4; 
   filter: brightness(100%);
 }
 
