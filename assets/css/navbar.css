@@ -1,4 +1,10 @@
 @import url(master.css);
+:root {
+  --text-color: white;
+  --background: #1a2023;
+  --navbar: rgba(14, 18, 19, 0.4); /* 40% opacity */
+  --accent: #0284d4;
+}
 
 nav {
   height: 55px;
@@ -31,10 +37,13 @@ nav .logo {
   align-items: center;
 }
 
-nav .logo h1 { margin-left: 15px; font-size: 30px; }
+nav .logo h1 {
+  margin-left: 15px;
+  font-size: 30px;
+}
 
 nav a {
-  color: var(--text);
+  color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
   margin: 10px;
@@ -46,11 +55,10 @@ nav a {
   justify-content: center;
   align-items: center;
   transition: 0.4s all;
-
 }
 
 nav a:visited {
-  color: var(--text);
+  color: var(--text-color);
 }
 
 nav img {
@@ -61,77 +69,19 @@ nav .navitem a {
   position: relative;
 }
 
-nav a[selected], nav .navitem a:hover {
+nav a[selected],
+nav .navitem a:hover {
   background-color: var(--accent);
   text-decoration: none;
   color: var(--background);
   filter: brightness(100%);
 }
 
-/*nav .navitem a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--accent);
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-  }
-
-  nav .navitem a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}*/
-
-nav .navitem a:hover {
-  text-decoration: none;
-  filter: brightness(100%)
-}
-
-
-
 nav .navitem:not(:last-child)::after {
   content: "/";
   margin: 0 5px;
   color: gray;
-} 
-
-
-/*.tooltip {
-  position: relative;
 }
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--navbar);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 150%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: 0.6s opacity;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent var(--navbar) transparent;
-}*/
 
 .navitem a span {
   width: 0; /* Initial position outside the parent */
