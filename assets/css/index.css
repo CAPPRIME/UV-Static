@@ -1,1 +1,76 @@
+body {
+  background-color:#120924;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
+
+
+#content {
+  text-align: center;
+  /* margin-top: -4%; */ /* Comment out or adjust this line */
+}
+
+#content h1 {
+  font-size: 24px;
+  cursor:pointer;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#searchbar {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.form__input {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 350px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  background-color: #222;
+  text-align: center;
+  color: #fff;
+  cursor:text;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+  width:50px;
+  height:50px;
+  padding-right: 1px;
+  padding-left: 1px;
+  text-align: center;
+  align-self: center;
+}
+
+.form__input::placeholder {
+  color: #aaa;
+  text-align: center;
+}
+
+.form_input:hover{
+  cursor:text;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+     
+
+.fa {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.fa:hover {
+  color: #aaa;
+}
