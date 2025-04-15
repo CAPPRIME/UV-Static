@@ -4,11 +4,11 @@ nav {
   height: 55px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Center the content vertically */
-  margin: 0;
+  align-items: center;
   padding: 0 20px;
+  margin: 0;
   margin-bottom: 10px;
-  background-color: #0e1213;
+  background-color: var(--navbar);
 }
 
 nav .navitem {
@@ -28,31 +28,29 @@ nav .navitems {
 
 nav .logo {
   display: flex;
-  align-items: center; /* Center the logo and title vertically */
+  align-items: center;
 }
 
-nav .logo h1 {
-  margin-left: 15px;
-  margin-top: 15px;
-  font-size: 30px;
-}
+nav .logo h1 { margin-left: 15px; font-size: 30px; }
 
 nav a {
-  color: #0284d4;
+  color: var(--text);
   text-decoration: none;
   font-size: 18px;
   margin: 10px;
   transition: all 0.6s;
+  padding: 10px 15px;
   border-radius: 15px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s all;
+
 }
 
 nav a:visited {
-  color: #0284d4;
+  color: var(--text);
 }
 
 nav img {
@@ -64,9 +62,9 @@ nav .navitem a {
 }
 
 nav a[selected], nav .navitem a:hover {
-  background-color: #0284d4; /
+  background-color: var(--accent);
   text-decoration: none;
-  color: #0284d4; 
+  color: var(--background);
   filter: brightness(100%);
 }
 
@@ -91,14 +89,17 @@ nav a[selected], nav .navitem a:hover {
 
 nav .navitem a:hover {
   text-decoration: none;
-  filter: brightness(100%);
+  filter: brightness(100%)
 }
+
+
 
 nav .navitem:not(:last-child)::after {
   content: "/";
   margin: 0 5px;
   color: gray;
-}
+} 
+
 
 /*.tooltip {
   position: relative;
