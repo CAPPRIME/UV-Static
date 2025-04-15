@@ -2,7 +2,7 @@
 :root {
   --text-color: white;
   --background: #1a2023;
-  --navbar: rgba(14, 18, 19, 0.4); /* 40% opacity */
+  --navbar: rgba(14, 18, 19, 0.7); /* 40% opacity */
   --accent: #0284d4;
 }
 
