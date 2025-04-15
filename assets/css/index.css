@@ -1,14 +1,15 @@
 body {
-  background-color: #120924; /* Retained background color */
-  color: #fff; /* Optional: Keeps text readable */
+  background-color:#120924;
+  color: #fff;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ensures full viewport height */
-  text-align: center;
 }
+
+#content {
+  text-align: center;
+  /* margin-top: -4%; */ /* Comment out or adjust this line */
+}
+
 #searchbar {
   text-align: center;
   margin: 25px auto;
