@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/img/salyte.jpg">
+<link rel="stylesheet" href="/assets/css/app.css?v=2.2">
+<link rel="stylesheet" href="/assets/css/gms.css?v=2.2">
+<link rel="stylesheet" href="/assets/css/menu.css?v=2.2">
+<script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?v=2.2"></script>
+<script src="/assets/js/particles.js?v=2.2"></script>
+<script src="/assets/js/cdn-rocket.js?v=2.2"></script>
+<script src="/assets/js/anym.js?v=2.2"></script>
+<title>Apps | CAP_PRIME</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6YEQ7Q0XRC"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-6YEQ7Q0XRC');</script>
+</head>
+<body>
+  <div id="contextMenu" class="context-menu themesExcluded" style="--ripple-duration: 300ms;"><div class="context-menu-item with-submenu themesExcluded" id="contextItem" anim="ripple" onclick="toggleSubMenu(event, this)"><i class="bi bi-folder2-open" style="font-size:30px;"></i>Open</div><div class="submenu themesExcluded"><div class="context-menu-item themesExcluded" anim="ripple" onclick="send('/open.html')"><i class="bi bi-folder" style="font-size:30px;"></i>Folder</div><div class="context-menu-item themesExcluded" anim="ripple" onclick="send('/file.html')"><i class="bi bi-file-earmark" style="font-size:30px;"></i>File</div></div></div></div>
+  <div class="navitems">
+      <div class="navitem"><a href="/">Home</a></div>
+      <div class="navitem"><a href="/gs.html">Games</a></div>
+      <div class="navitem"><a href="/apps.html">Apps</a></div>
+      <div class="navitem"><a href="/emulator.html">Emulator</a></div>
+      <div class="navitem"><a href="/search.html">Search</a></div>
+    </div>
+ <div class="search-bar themesExcluded" style="display: flex; justify-content: center; border-radius: 10px; margin: 20px;">
+  <form id="searchForm" onsubmit="return false;" autocomplete="off">
+  <i class="bi bi-search searchIcon" style="margin-left: 147px;" id="search"></i>
+  <input id="searchApps" style="width: 420px;" placeholder="Search for apps" class="searchbar"></form>
+ </div>
+ <div class="search-results themesExcluded" id="appContainer">
+  <div id="searchMessage" class="themesExcluded" style="display: none;color:white;text-align: center;font-size: 30px;margin:20px;font-family:poppins;padding: 0;"></div>
+  <div id="fetchMessage" class="themesExcluded" style="display:block;color:white;text-align: center;font-size: 30px;margin:20px;font-family:poppins;padding: 0;">Loading apps...</div>
+ </div><br>
+  
+ <script src="/wk/wk2.js?v=2.2"></script>
+ <script src="/assets/js/themes.js?v=2.2"></script>
+ <script src="/assets/js/ag.js?v=2.2"></script>
+ <script src="/assets/js/apps.js?v=2.2"></script>
+ <script src="/assets/js/main.js?v=2.2"></script>
+
+  
+</body>
+</html>
