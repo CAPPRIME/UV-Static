@@ -8,7 +8,7 @@ function loadApps() {
       }
     });
   });
-  squareBtns.forEach(btn => {
+  squareBtns.forEach(btn => {.h
     observer.observe(btn);
   });
 }
@@ -47,7 +47,7 @@ function addApp(name, imageUrl, appUrl, width, height) {
   appContainer.appendChild(linkElement);
 }
 
-fetch('/data/a-list.json').then(response => {
+fetch('/assets/data/a-list.json').then(response => {
   if (!response.ok) {
     throw new Error('Network response was not ok');
   }
